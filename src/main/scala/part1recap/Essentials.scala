@@ -90,11 +90,13 @@ object Essentials {
   val anotherFuture: Future[Int] = aFuture.map(_ + 1) // Future(43) when it completes
 
   // partial functions
+/*
   val aPartialFunction = PartialFunction[Int, Int] = {
     case 1 => 43
     case 8 => 56
     case 100 => 999
   }
+*/
 
   // some more advanced stuff
   trait HigherKindedType[F[_]]
